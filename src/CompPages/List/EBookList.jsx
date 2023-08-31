@@ -19,7 +19,7 @@ function EBookList() {
   useEffect(() => {
     fetch("http://localhost:8080/api/products/getByType/1", {
       headers: {
-        "Authorization": 'Bearer ' + localStorage.getItem("Token")
+        Authorization: 'Bearer ' + localStorage.getItem("Token")
       }
     })
       .then(res => res.json())
@@ -39,7 +39,7 @@ function EBookList() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + localStorage.getItem("Token")
+        Authorization: 'Bearer ' + localStorage.getItem("Token")
       },
       body: JSON.stringify({
         productId: productId,

@@ -21,7 +21,7 @@ const Library = () => {
 
     useEffect(() => {
         // Define the URL for your API endpoint
-        const apiUrl = 'http://localhost:8080/api/products/getProducts';
+        const apiUrl = 'http://localhost:8080/api/myshelf/customer/1';
 
         // Make a GET request to the API
         fetch(apiUrl)

@@ -8,7 +8,7 @@ const Account = ({ user, onLogout, onTogglePremium }) => {
     useEffect(() => {
         const fetchAccountDetails = async () => {
             try {
-                const response = await fetch('', {
+                const response = await fetch('http://localhost:8080/api/customer/getbyid/1', {
                     method: 'GET',
                     headers: {
                         // Add any required headers here (e.g., authentication headers)

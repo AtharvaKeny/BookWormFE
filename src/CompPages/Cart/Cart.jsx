@@ -57,7 +57,7 @@ function BeneficiaryList(props) {
   useEffect(() => {
     fetch("http://localhost:8080/api/cart/getallcart",{
       headers:{
-        "Authorization":"Bearer "+localStorage.getItem("Token")
+        Authorization:"Bearer "+localStorage.getItem("Token")
       }
     })
       .then((res) => {

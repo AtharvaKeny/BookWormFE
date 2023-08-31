@@ -13,7 +13,7 @@ export function Header() {
     <div>
       <Navbar bg="dark" variant="dark" expand="lg" className="Headermain">
         <Container>
-          <Navbar.Brand href="/Home"><h2>BookWorm</h2></Navbar.Brand>
+          <Navbar.Brand href="/"><h2>BookWorm</h2></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 export function CarouselFadeExample() {
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex) => {
+        setIndex(selectedIndex);
+    };
+
     return (
-        <Carousel fade>
+        <Carousel fade activeIndex={index} onSelect={handleSelect} interval={5000}>
             <Carousel.Item>
                 <img
                     className='d-block w-100'
@@ -16,7 +22,7 @@ export function CarouselFadeExample() {
                 <img
                     className='d-block w-100'
                     src={"Images/Slideshow/book7.jpg"}
-                    alt='First slide'
+                    alt='Second slide'
                 />
                 <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
@@ -24,7 +30,7 @@ export function CarouselFadeExample() {
                 <img
                     className='d-block w-100'
                     src={"Images/Slideshow/ebook8.jpg"}
-                    alt='First slide'
+                    alt='Third slide'
                 />
                 <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>
@@ -32,7 +38,7 @@ export function CarouselFadeExample() {
                 <img
                     className='d-block w-100'
                     src={"Images/Slideshow/ebook9.jpg"}
-                    alt='First slide'
+                    alt='Fourth slide'
                 />
                 <Carousel.Caption></Carousel.Caption>
             </Carousel.Item>

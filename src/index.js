@@ -31,7 +31,7 @@ root.render(
         <Route path="/" element={<App />}>
           <Route path="Header" element={<Header />} />
           <Route path="Product" element={<Product />} />
-          <Route path="Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="SignIn" element={<SignIn />} />
           <Route path="SignUp" element={<SignUp />} />
           <Route path="EBook" element={<EBookList />} />
