@@ -11,7 +11,7 @@ const Account = ({ user, onLogout, onTogglePremium }) => {
                 const response = await fetch('http://localhost:8080/api/customer/getbyid/1', {
                     method: 'GET',
                     headers: {
-                        // Add any required headers here (e.g., authentication headers)
+                        Authorization: 'Bearer ' + localStorage.getItem("Token")
                     },
                 });
 
